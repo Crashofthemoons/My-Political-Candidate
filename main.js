@@ -14,7 +14,7 @@ senator.appendChild(newSection);
 // In JavaScript, there is a method that creates a new attribute node for any DOM element. Discover that method and use it to create a custom attribute named congressional-district and its value should be your congressional district number. Then attach that attribute to the <article> container you made for your representative component.
 
 
-const congressionalDistrict = document.createAttribute("dog");
+const congressionalDistrict = document.createAttribute("congressional-district");
 congressionalDistrict.value = "5";
 senator.setAttributeNode(congressionalDistrict);
 
@@ -55,7 +55,7 @@ const section2 = document.createElement('section'); //create 2nd section
 const section2class = document.createAttribute('id'); //create id for secton 2
 section2class.value = 'committees'; //set value for section 2 id
 section2.setAttributeNode(section2class); //assign id to section
-article1.appendChild(section2); //append 2nd section to article
+article1.appendChild(section2); //append 2nd  section to article
 
 const ul2 = document.createElement('ul'); // create 2nd ul
 section2.appendChild(ul2); //append ul2 to section2
